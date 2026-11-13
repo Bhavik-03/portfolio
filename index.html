@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavik Fulfagar | AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Bhavik Fulfagar — AI/ML engineer working in deep learning, computer vision, and LLM-driven agentic systems. B.Tech Robotics &amp; AI, COEP Technological University.">
+<meta property="og:title" content="Bhavik Fulfagar | AI/ML Engineer">
+<meta property="og:description" content="Deep learning, computer vision, and LLM-driven agentic systems — from research to deployed pipelines.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0E14; --surface:#10141D; --surface-strong:#161B26;
+    --fg:#EEF2F8; --body:#C8D1DF; --muted:#9BA6B8; --border:#28303F;
+    --primary:#34D399; --primary-fg:#04140F; --accent:#FBBF24;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .mono{font-family:'IBM Plex Mono','Courier New',monospace;}
+
+  .shell{display:flex;flex-wrap:wrap;align-items:flex-start;}
+  .sidebar{flex:1 1 300px;max-width:320px;background:rgba(22,27,38,0.5);padding:40px 28px;border-bottom:1px solid var(--border);}
+  @media(min-width:900px){
+    .sidebar{position:sticky;top:0;align-self:flex-start;max-height:100vh;overflow-y:auto;border-bottom:none;border-right:1px solid var(--border);}
+  }
+  .content{flex:999 1 560px;min-width:0;}
+  section{padding:68px 44px;border-bottom:1px solid var(--border);}
+  @media(max-width:600px){section{padding:52px 24px;} .sidebar{padding:32px 24px;}}
+  .band{background:rgba(22,27,38,0.3);}
+  h2.sec{font-size:30px;font-weight:500;margin:0 0 30px;}
+
+  .navlink{padding:7px 0 7px 14px;border-left:2px solid transparent;transition:color .15s ease,border-color .15s ease;}
+  .navlink:hover{color:var(--primary);border-color:var(--primary);}
+  .pill{transition:border-color .15s ease,color .15s ease;}
+  .pill:hover{border-color:var(--primary);color:var(--primary);}
+  .solid:hover{opacity:.88;}
+  .icon-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);color:var(--body);border-radius:6px;transition:border-color .15s ease,color .15s ease;}
+  .icon-btn:hover{border-color:var(--primary);color:var(--primary);}
+  .repo-row{display:flex;flex-direction:column;gap:20px;padding:28px;border:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));border-radius:10px;transition:border-color .2s ease;}
+  .repo-row:hover{border-color:rgba(52,211,153,0.55);}
+  .card-link{background:var(--bg);padding:28px;transition:background .15s ease;}
+  .card-link:hover{background:var(--surface-strong);}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:11.5px;padding:6px 12px;border:1px solid var(--border);color:var(--primary);border-radius:999px;background:rgba(52,211,153,0.08);white-space:nowrap;}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .bullet{border-left:2px solid var(--border);padding-left:16px;color:var(--body);font-size:15.5px;line-height:1.8;}
+  .lbl{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--primary);text-transform:uppercase;letter-spacing:.08em;margin:30px 0 14px;}
+  .lbl:first-of-type{margin-top:0;}
+  .panel{background:var(--surface-strong);border:1px solid var(--border);border-radius:10px;padding:38px;margin-top:26px;}
+  @media(max-width:600px){.panel{padding:24px;}}
+  .btn{cursor:pointer;font-family:'IBM Plex Mono',monospace;background:transparent;color:var(--fg);border:1px solid var(--border);padding:11px 17px;font-size:12.5px;font-weight:600;border-radius:6px;}
+  table{border-collapse:collapse;width:100%;}
+  td,th{text-align:left;padding:12px 16px;font-size:14px;}
+  tr{border-bottom:1px solid var(--border);}
+  .figure{background:#0d1118;border:1px solid var(--border);border-radius:8px;padding:12px;}
+
+  .dc-anim-on .reveal{opacity:0;transform:translateY(28px);}
+  .dc-anim-on .reveal.is-visible{opacity:1;transform:none;transition:opacity .65s cubic-bezier(.22,.61,.36,1),transform .65s cubic-bezier(.22,.61,.36,1);}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <img src="assets/bhavik.jpg" alt="Bhavik Fulfagar" style="width:128px;height:128px;border-radius:10px;object-fit:cover;border:1px solid var(--border);">
+    <h1 style="font-size:24px;font-weight:500;line-height:1.2;margin-top:20px;">Bhavik Fulfagar</h1>
+    <p class="mono" style="font-size:12.5px;color:var(--primary);margin:6px 0 0;">AI/ML Engineer</p>
+    <p style="font-size:14.5px;color:var(--body);line-height:1.75;margin-top:18px;">Deep learning, computer vision, and agentic LLM systems — from research to deployed pipelines.</p>
+    <div class="mono" style="font-size:12px;color:var(--muted);line-height:2;margin-top:20px;border-top:1px solid var(--border);padding-top:16px;">
+      <div>B.Tech Robotics &amp; AI, COEP</div>
+      <div>Graduating 2028 · CGPA 8.41</div>
+      <div>Pune, India</div>
+      <div style="color:var(--primary);margin-top:6px;">Open to AI/ML internships</div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:2px;margin-top:26px;font-size:14.5px;color:var(--body);">
+      <a class="navlink" href="#top">Home</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#experience">Experience</a>
+      <a class="navlink" href="#projects">Projects</a>
+      <a class="navlink" href="#stack">Tech Stack</a>
+      <a class="navlink" href="#education">Education</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-top:26px;">
+      <a class="icon-btn" href="https://linkedin.com/in/bhavik-fulfagar" target="_blank" rel="noreferrer" aria-label="LinkedIn" style="font-size:12.5px;">in</a>
+      <a class="icon-btn" href="https://github.com/Bhavik-03" target="_blank" rel="noreferrer" aria-label="GitHub" style="font-size:11.5px;">GH</a>
+      <a class="icon-btn" href="mailto:bhavikfulfagar1008@gmail.com" aria-label="Email" style="font-size:14px;">✉</a>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section id="top" style="padding-top:76px;">
+      <p class="mono" style="font-size:12.5px;color:var(--accent);letter-spacing:0.04em;">AI/ML ENGINEER · PUNE, INDIA · OPEN TO INTERNSHIPS</p>
+      <h2 style="font-size:clamp(30px,4.2vw,44px);font-weight:500;line-height:1.15;margin:20px 0 0;max-width:800px;">AI/ML Engineer building deep learning, computer vision, and LLM-driven agentic systems.</h2>
+      <p style="max-width:660px;color:var(--body);font-size:17px;line-height:1.85;margin-top:24px;">I enjoy taking projects from research and experimentation through to real-world deployment, with experience across model fine-tuning, evaluation, and production pipelines. A computer-vision pipeline I built runs on the live Pune Metro line. Looking for an internship opportunity to build impactful LLM and agentic applications.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px;">
+        <a class="solid" href="#projects" style="display:inline-flex;align-items:center;padding:13px 24px;font-size:14.5px;font-weight:600;border:1px solid var(--primary);background:var(--primary);color:var(--primary-fg);border-radius:6px;">View projects</a>
+        <a class="pill" href="mailto:bhavikfulfagar1008@gmail.com" style="display:inline-flex;align-items:center;padding:13px 24px;font-size:14.5px;font-weight:600;border:1px solid var(--border);color:var(--fg);border-radius:6px;">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="sec reveal">About</h2>
+      <div class="reveal" style="max-width:700px;color:var(--body);font-size:16px;line-height:1.85;">
+        <p style="margin:0 0 20px;">I'm a B.Tech student in Robotics &amp; AI at COEP Technological University, Pune, working across deep learning, computer vision, and LLM-driven agentic systems.</p>
+        <p style="margin:0 0 20px;">During my internship at ERIC Robotics I fine-tuned and deployed an instance-segmentation pipeline for automated railway-track inspection — field-tested overnight on the live Pune Metro line on NVIDIA Jetson Orin. Alongside that I build and evaluate my own systems end to end: a voice-first agentic LLM assistant, and an underwater image-restoration model served through a production web app.</p>
+        <p style="margin:0;">What I care about most is the part after the notebook: measuring honestly, catching regressions, and getting a model to run reliably on real hardware. I'm looking for an internship building LLM and agentic applications.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="band">
+      <h2 class="sec reveal">Experience</h2>
+      <div style="border-top:1px solid var(--border);">
+        <div class="reveal" style="padding:30px 0;border-bottom:1px solid var(--border);">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:baseline;">
+            <p class="mono" style="font-size:13px;color:var(--primary);margin:0;">ERIC Robotics, Pune</p>
+            <p class="mono" style="font-size:12.5px;color:var(--muted);margin:0;">Jun 2026 – Jul 2026</p>
+          </div>
+          <h3 style="font-size:20px;font-weight:600;margin:12px 0 0;">Machine Learning Intern</h3>
+          <p style="font-size:14.5px;color:var(--muted);margin:8px 0 0;">Automated railway-track inspection · Fastener asset counting</p>
+          <div style="margin:24px 0 0;display:flex;flex-direction:column;gap:16px;max-width:860px;">
+            <div class="bullet">Fine-tuned a YOLO26s instance-segmentation model on 700+ annotated grayscale images across 4 fastener classes, reaching 0.987 mask mAP@50; benchmarked the ViT-based RF-DETR detector and transitioned the pipeline after comparative testing showed substantially stronger detection quality.</div>
+            <div class="bullet">Designed a virtual-stitching and sliding-window pipeline for sequential railway frames, calculating stride and overlap so each fastener kit appeared fully in at least one inference window, with global-coordinate deduplication and kit-completeness checks to prevent duplicate counts and flag missing components.</div>
+            <div class="bullet">Deployed the pipeline on NVIDIA Jetson Orin using TensorRT, ONNX, CUDA and ROS 2, and field-tested it on the live Pune Metro line during overnight sessions.</div>
+            <div class="bullet">Developed a multi-threaded C++ logging engine with in-memory buffering and a background flush worker, removing disk I/O from the inference thread while supporting thread-safe concurrent writes.</div>
+          </div>
+          <div class="tags" style="margin-top:24px;">
+            <span class="tag">PyTorch</span><span class="tag">YOLO26s</span><span class="tag">RF-DETR</span><span class="tag">Roboflow</span><span class="tag">MLflow</span><span class="tag">TensorRT</span><span class="tag">ONNX</span><span class="tag">CUDA</span><span class="tag">ROS 2</span><span class="tag">C++</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="sec reveal" style="margin-bottom:12px;">Projects</h2>
+
+      <div id="project-list">
+        <p class="reveal" style="color:var(--body);font-size:15.5px;line-height:1.8;margin:0 0 34px;max-width:660px;">Both projects are public on GitHub, with reproducible evaluation and measured results. Open a project for its architecture, benchmarks, and how it works.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:22px;align-items:stretch;">
+
+          <div class="repo-row reveal">
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between;">
+                <h3 class="mono" style="font-size:16.5px;font-weight:600;word-break:break-word;">AI_glass_v1</h3>
+                <span class="mono" style="display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);white-space:nowrap;"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>Python</span>
+              </div>
+              <p style="font-size:16px;font-weight:600;color:var(--fg);margin:12px 0 0;line-height:1.5;">AI Study Assistant — voice-first agentic LLM pipeline</p>
+              <p style="color:var(--body);margin:10px 0 0;line-height:1.8;font-size:15px;">Local speech-to-text and text-to-speech wrap a tool-calling Gemini agent with memory, reminders, concept tracking, and quizzing. Screen-aware: a "Look" key sends a screenshot with your question.</p>
+              <p class="mono" style="color:var(--accent);margin:16px 0 0;font-size:12.5px;line-height:1.7;">4.3 s median latency · 0 errors / 60 cases · 90% Look accuracy</p>
+              <div class="tags" style="margin-top:18px;">
+                <span class="tag">Python</span><span class="tag">Gemini API</span><span class="tag">faster-whisper</span><span class="tag">Piper TTS</span><span class="tag">SQLite FTS5</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn pill" type="button" onclick="openProject('ai')">View Details ↗</button>
+              <a class="pill mono" href="https://youtu.be/kQE3i1y5kHM" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:11px 17px;font-size:12.5px;font-weight:600;border:1px solid var(--border);color:var(--fg);border-radius:6px;">▶ Demo ↗</a>
+              <a class="pill mono" href="https://github.com/Bhavik-03/AI_glass_v1" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:11px 17px;font-size:12.5px;font-weight:600;border:1px solid rgba(52,211,153,0.55);color:var(--primary);border-radius:6px;">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="repo-row reveal">
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between;">
+                <h3 class="mono" style="font-size:16.5px;font-weight:600;word-break:break-word;">Image-Enhancement</h3>
+                <span class="mono" style="display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);white-space:nowrap;"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>Python</span>
+              </div>
+              <p style="font-size:16px;font-weight:600;color:var(--fg);margin:12px 0 0;line-height:1.5;">Deep Restore — underwater image enhancement</p>
+              <p style="color:var(--body);margin:10px 0 0;line-height:1.8;font-size:15px;">Fine-tuned Shallow-UWnet (219K parameters) on the UIEB benchmark with an L1 + VGG perceptual loss, served through a FastAPI backend and React web app with full-resolution photo and video endpoints.</p>
+              <p class="mono" style="color:var(--accent);margin:16px 0 0;font-size:12.5px;line-height:1.7;">+1.13 dB PSNR · 67 of 89 images improved · 8K inference in 3.04 s</p>
+              <div class="tags" style="margin-top:18px;">
+                <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">React/TypeScript</span><span class="tag">OpenCV</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn pill" type="button" onclick="openProject('deep')">View Details ↗</button>
+              <a class="pill mono" href="https://github.com/Bhavik-03/Image-Enhancement" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:11px 17px;font-size:12.5px;font-weight:600;border:1px solid rgba(52,211,153,0.55);color:var(--primary);border-radius:6px;">GitHub ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="panel-ai" class="panel" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:22px;">
+          <div>
+            <p class="mono" style="color:var(--accent);font-size:12.5px;margin:0 0 8px;">AI_glass_v1 · Python · Personal project, ongoing</p>
+            <h3 style="font-size:26px;font-weight:600;margin:0;">AI Study Assistant</h3>
+          </div>
+          <button class="btn pill" type="button" onclick="closeProject()" style="white-space:nowrap;">← All projects</button>
+        </div>
+        <p style="color:var(--body);font-size:16px;line-height:1.85;margin:0 0 30px;max-width:760px;">A learning companion that runs on a laptop. Hold a push-to-talk key, ask a question or give a command, let go, and hear a short spoken answer. Speech recognition and synthesis run locally on GPU; a tool-calling LLM decides what to do in between.</p>
+
+        <p class="lbl">Demo</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="pill" href="https://youtu.be/kQE3i1y5kHM" target="_blank" rel="noreferrer" style="display:inline-flex;flex-direction:column;gap:5px;padding:16px 22px;border:1px solid rgba(52,211,153,0.55);color:var(--primary);border-radius:8px;min-width:240px;">
+            <span class="mono" style="font-size:13.5px;font-weight:600;">▶ Watch the v2 demo ↗</span>
+            <span style="font-size:13px;color:var(--body);">Look key, follow-ups, and quiz me</span>
+          </a>
+          <a class="pill" href="https://youtu.be/wGKn86mIK80" target="_blank" rel="noreferrer" style="display:inline-flex;flex-direction:column;gap:5px;padding:16px 22px;border:1px solid var(--border);color:var(--fg);border-radius:8px;min-width:240px;">
+            <span class="mono" style="font-size:13.5px;font-weight:600;">▶ Watch the v1 demo ↗</span>
+            <span style="font-size:13px;color:var(--body);">A live question, a note, a spoken reminder</span>
+          </a>
+        </div>
+
+        <p class="lbl">Architecture</p>
+        <div style="overflow-x:auto;background:#0d1118;border:1px solid var(--border);border-radius:8px;padding:20px;">
+          <div style="position:relative;width:840px;height:400px;">
+            <div style="position:absolute;left:280px;top:40px;width:540px;height:300px;background:rgba(52,211,153,0.04);border:1px dashed #334054;border-radius:10px;"></div>
+
+            <svg width="160" height="8" viewBox="0 0 160 8" preserveAspectRatio="none" style="position:absolute;left:140px;top:141px;width:160px;height:8px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah1" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 0 4 L 156 4" marker-end="url(#ah1)"></path></svg>
+            <svg width="48" height="8" viewBox="0 0 48 8" preserveAspectRatio="none" style="position:absolute;left:440px;top:141px;width:48px;height:8px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah2" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 0 4 L 44 4" marker-end="url(#ah2)"></path></svg>
+            <svg width="48" height="8" viewBox="0 0 48 8" preserveAspectRatio="none" style="position:absolute;left:638px;top:141px;width:48px;height:8px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah3" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 0 4 L 44 4" marker-end="url(#ah3)"></path></svg>
+            <svg width="8" height="40" viewBox="0 0 8 40" preserveAspectRatio="none" style="position:absolute;left:534px;top:190px;width:8px;height:40px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah4" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 4 0 L 4 36" marker-end="url(#ah4)"></path></svg>
+            <svg width="8" height="39" viewBox="0 0 8 39" preserveAspectRatio="none" style="position:absolute;left:584px;top:191px;width:8px;height:39px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah5" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 4 39 L 4 4" marker-end="url(#ah5)"></path></svg>
+            <svg width="8" height="166" viewBox="0 0 8 166" preserveAspectRatio="none" style="position:absolute;left:734px;top:190px;width:8px;height:166px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round" aria-hidden="true"><path d="M 4 0 L 4 166"></path></svg>
+            <svg width="668" height="8" viewBox="0 0 668 8" preserveAspectRatio="none" style="position:absolute;left:70px;top:352px;width:668px;height:8px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round" aria-hidden="true"><path d="M 0 4 L 668 4"></path></svg>
+            <svg width="8" height="165" viewBox="0 0 8 165" preserveAspectRatio="none" style="position:absolute;left:66px;top:191px;width:8px;height:165px;overflow:visible;fill:none;stroke:#4A566D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><defs><marker id="ah6" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4A566D" stroke="none"/></marker></defs><path d="M 4 165 L 4 4" marker-end="url(#ah6)"></path></svg>
+
+            <div style="position:absolute;left:0px;top:100px;width:140px;height:90px;padding:8px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:12px;line-height:1.45;"><span><b>PC client</b><br>mic · two keys · speakers</span></div>
+            <div style="position:absolute;left:300px;top:100px;width:140px;height:90px;padding:8px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:12px;line-height:1.45;"><span><b>Whisper</b><br>speech to text, GPU</span></div>
+            <div style="position:absolute;left:488px;top:100px;width:150px;height:90px;padding:8px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1.5px solid var(--primary);border-radius:8px;font-size:12px;line-height:1.45;"><span><b>Gemini</b><br>reasoning + tool calling</span></div>
+            <div style="position:absolute;left:686px;top:100px;width:104px;height:90px;padding:8px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:12px;line-height:1.45;"><span><b>Piper</b><br>text to speech</span></div>
+            <div style="position:absolute;left:468px;top:230px;width:190px;height:90px;padding:8px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:12px;line-height:1.45;"><span><b>Tools</b><br>web search · notes · reminders · concepts (SQLite)</span></div>
+
+            <div class="mono" style="position:absolute;left:296px;top:52px;font-size:12px;line-height:16px;color:var(--muted);">Laptop server · FastAPI · 127.0.0.1</div>
+            <div style="position:absolute;left:176px;top:115px;width:88px;text-align:center;font-size:12.5px;line-height:16px;color:var(--muted);">WAV + JPEG</div>
+            <div style="position:absolute;left:360px;top:368px;width:88px;text-align:center;font-size:12.5px;line-height:16px;color:var(--muted);">answer WAV</div>
+          </div>
+        </div>
+
+        <p class="lbl">Measured results</p>
+        <table>
+          <tr style="background:var(--surface);"><th style="color:var(--muted);">Metric</th><th style="color:var(--muted);">Result</th></tr>
+          <tr><td style="color:var(--body);">Median end-to-end latency</td><td style="color:var(--primary);font-weight:700;">4.3 s</td></tr>
+          <tr><td style="color:var(--body);">Errors across 60 test cases</td><td style="color:var(--primary);font-weight:700;">0</td></tr>
+          <tr><td style="color:var(--body);">Look-mode accuracy (90-case suite)</td><td style="color:var(--primary);font-weight:700;">90%</td></tr>
+          <tr><td style="color:var(--body);">Quiz grading accuracy</td><td style="color:var(--primary);font-weight:700;">10 / 10</td></tr>
+        </table>
+
+        <p class="lbl">How it works</p>
+        <p style="color:var(--body);font-size:15.5px;line-height:1.85;max-width:800px;">The client captures audio on a push-to-talk key and posts it to a local FastAPI server, optionally with a screenshot when the Look key is used. faster-whisper transcribes on-GPU, Gemini reasons over the text and decides whether to call one of 13 tools — web search, notes, reminders, a concept tracker, or a quiz grader — within a three-round tool budget and a staged 15-second deadline with a tool-free fallback. Piper synthesizes the reply locally and the answer audio goes back to the client, which also polls every 10 seconds and speaks reminders when they fall due. A short-term session keeps follow-ups like "tell me more" in context, and a SQLite FTS5 store backs notes, reminders and logged concepts.</p>
+
+        <p class="lbl">Engineering decisions</p>
+        <div style="display:flex;flex-direction:column;gap:16px;max-width:820px;">
+          <div class="bullet">Capped the agent at a three-round tool budget with a staged 15-second deadline and a tool-free fallback, so a slow or failing tool degrades into a plain answer instead of a timeout.</div>
+          <div class="bullet">Kept speech-to-text and text-to-speech local on a 4 GB RTX 3050 — audio never leaves the machine, screenshots are shrunk and never written to disk, and only question text and tool results reach the API.</div>
+          <div class="bullet">Froze an evaluation suite before iterating, so each version is scored on the same cases and regressions surface before release.</div>
+        </div>
+
+        <p class="lbl">Tech Stack</p>
+        <div class="tags">
+          <span class="tag">Gemini API</span><span class="tag">Function Calling</span><span class="tag">faster-whisper</span><span class="tag">Piper TTS</span><span class="tag">Tavily</span><span class="tag">FastAPI</span><span class="tag">CUDA</span><span class="tag">SQLite FTS5</span>
+        </div>
+
+        <div style="margin-top:30px;padding-top:26px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+          <button class="btn pill" type="button" onclick="closeProject()" style="color:var(--muted);">← All projects</button>
+          <a class="mono pill" href="https://github.com/Bhavik-03/AI_glass_v1" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:11px 19px;font-size:13px;font-weight:600;border:1px solid rgba(52,211,153,0.55);color:var(--primary);border-radius:6px;">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <div id="panel-deep" class="panel" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:22px;">
+          <div>
+            <p class="mono" style="color:var(--accent);font-size:12.5px;margin:0 0 8px;">Image-Enhancement · Python · Oct 2026</p>
+            <h3 style="font-size:26px;font-weight:600;margin:0;">Deep Restore</h3>
+          </div>
+          <button class="btn pill" type="button" onclick="closeProject()" style="white-space:nowrap;">← All projects</button>
+        </div>
+        <p style="color:var(--body);font-size:16px;line-height:1.85;margin:0 0 30px;max-width:760px;">Underwater photos lose colour and contrast with depth. Deep Restore fine-tunes a small CNN to bring them back, and serves it through a production web app for photos and video.</p>
+
+        <p class="lbl">The web app</p>
+        <div class="figure"><img src="assets/deep-restore-app.png" alt="Deep Restore web app showing an interactive before/after slider over an underwater photo of fish, labelled Original and Enhanced" style="border-radius:4px;"></div>
+        <p style="color:var(--body);font-size:14px;line-height:1.8;margin:14px 0 0;">Drag-to-compare slider over a real enhanced frame — the original on the left, the model's output on the right.</p>
+
+        <p class="lbl">Architecture</p>
+        <div class="figure" style="padding:16px;"><img src="assets/deep-restore-architecture.png" alt="Architecture: data.py and model.py feed train.py producing a checkpoint, used by evaluate.py and enhance.py, which feeds a FastAPI backend and React frontend" style="border-radius:4px;"></div>
+
+        <p class="lbl">Measured results</p>
+        <p style="color:var(--body);font-size:14.5px;line-height:1.8;margin:0 0 16px;">Scored on 89 held-out UIEB test pairs at full resolution.</p>
+        <table>
+          <tr style="background:var(--surface);"><th style="color:var(--muted);">Model</th><th style="color:var(--muted);">PSNR (dB)</th><th style="color:var(--muted);">SSIM</th></tr>
+          <tr><td style="color:var(--muted);">Raw input</td><td style="color:var(--muted);font-weight:700;">18.07</td><td style="color:var(--muted);font-weight:700;">0.7753</td></tr>
+          <tr><td style="color:var(--muted);">Pretrained (authors)</td><td style="color:var(--muted);font-weight:700;">17.97</td><td style="color:var(--muted);font-weight:700;">0.7700</td></tr>
+          <tr><td style="color:var(--primary);">Fine-tuned (ours)</td><td style="color:var(--primary);font-weight:700;">19.20</td><td style="color:var(--primary);font-weight:700;">0.8296</td></tr>
+        </table>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:16px;margin-top:20px;">
+          <div class="figure"><img src="assets/deep-restore-results.png" alt="Bar charts comparing PSNR and SSIM for raw input, pretrained weights, and fine-tuned model" style="border-radius:4px;"></div>
+          <div class="figure"><img src="assets/deep-restore-training.png" alt="Training loss and validation PSNR/SSIM curves over 30 epochs" style="border-radius:4px;"></div>
+        </div>
+
+        <p class="lbl">How it works</p>
+        <p style="color:var(--body);font-size:15.5px;line-height:1.85;max-width:800px;">Shallow-UWnet, a 219K-parameter CNN, is fine-tuned on 890 paired UIEB images with an L1 + VGG16 perceptual loss, raising PSNR from 18.07 to 19.20 dB and SSIM from 0.7753 to 0.8296 — beating the authors' own pretrained weights on 67 of 89 test images. An exact banded-inference scheme processes full-resolution photo and video frames in overlapping bands, holding peak VRAM at 3.6 GB from 4K to 8K (vs. 7.1 GB single-pass), served through a FastAPI backend and a React/TypeScript web app.</p>
+
+        <p class="lbl">Engineering decisions</p>
+        <div style="display:flex;flex-direction:column;gap:16px;max-width:820px;">
+          <div class="bullet">Ran a baseline-first evaluation that caught the authors' pretrained weights underperforming raw input due to domain shift — before trusting any fine-tuning result.</div>
+          <div class="bullet">Built an exact banded-inference scheme rather than downscaling, holding peak VRAM at 3.6 GB from 4K to 8K frames while producing results identical to a single pass.</div>
+          <div class="bullet">Backed the project with 45 reproducible CPU-only tests, seeded and checkpointed experiment tracking, and SHA-256-verified checkpoint loading.</div>
+        </div>
+
+        <p class="lbl">Tech Stack</p>
+        <div class="tags">
+          <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">FastAPI</span><span class="tag">React/TypeScript</span><span class="tag">Docker</span><span class="tag">VGG perceptual loss</span><span class="tag">pytest</span>
+        </div>
+
+        <div style="margin-top:30px;padding-top:26px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+          <button class="btn pill" type="button" onclick="closeProject()" style="color:var(--muted);">← All projects</button>
+          <a class="mono pill" href="https://github.com/Bhavik-03/Image-Enhancement" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:11px 19px;font-size:13px;font-weight:600;border:1px solid rgba(52,211,153,0.55);color:var(--primary);border-radius:6px;">View on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="band">
+      <h2 class="sec reveal">Tech Stack</h2>
+      <div style="border-top:1px solid var(--border);">
+        <div class="reveal" style="display:grid;gap:10px;padding:22px 0;border-bottom:1px solid var(--border);">
+          <div class="mono" style="font-size:12.5px;color:var(--primary);">Programming</div>
+          <div style="color:var(--body);font-size:15.5px;line-height:1.8;">Python, C++, SQL, SQLite</div>
+        </div>
+        <div class="reveal" style="display:grid;gap:10px;padding:22px 0;border-bottom:1px solid var(--border);">
+          <div class="mono" style="font-size:12.5px;color:var(--primary);">ML &amp; Deep Learning</div>
+          <div style="color:var(--body);font-size:15.5px;line-height:1.8;">PyTorch, Scikit-learn, Transformers, Hugging Face, model fine-tuning, evaluation design</div>
+        </div>
+        <div class="reveal" style="display:grid;gap:10px;padding:22px 0;border-bottom:1px solid var(--border);">
+          <div class="mono" style="font-size:12.5px;color:var(--primary);">LLM &amp; Agentic Systems</div>
+          <div style="color:var(--body);font-size:15.5px;line-height:1.8;">RAG, LangChain, Gemini API, function/tool calling, prompt engineering, agent evaluation, faster-whisper, Piper TTS</div>
+        </div>
+        <div class="reveal" style="display:grid;gap:10px;padding:22px 0;border-bottom:1px solid var(--border);">
+          <div class="mono" style="font-size:12.5px;color:var(--primary);">Computer Vision</div>
+          <div style="color:var(--body);font-size:15.5px;line-height:1.8;">YOLO, RF-DETR, object detection, instance segmentation, OpenCV, NumPy, Roboflow</div>
+        </div>
+        <div class="reveal" style="display:grid;gap:10px;padding:22px 0;border-bottom:1px solid var(--border);">
+          <div class="mono" style="font-size:12.5px;color:var(--primary);">MLOps &amp; Deployment</div>
+          <div style="color:var(--body);font-size:15.5px;line-height:1.8;">MLflow, FastAPI, Docker, Streamlit, ONNX, TensorRT, CUDA, NVIDIA Jetson Orin, ROS 2, Linux, Git, pytest, ruff</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="sec reveal">Education</h2>
+      <div class="reveal" style="border-top:1px solid var(--border);padding:30px 0;">
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:baseline;">
+          <p class="mono" style="font-size:13px;color:var(--primary);margin:0;">COEP Technological University, Pune</p>
+          <p class="mono" style="font-size:12.5px;color:var(--muted);margin:0;">2024 – 2028</p>
+        </div>
+        <h3 style="font-size:20px;font-weight:600;margin:12px 0 0;">B.Tech, Robotics and Artificial Intelligence</h3>
+        <p style="font-size:15.5px;color:var(--body);margin:12px 0 0;">CGPA 8.41 / 10</p>
+        <p style="font-size:15.5px;color:var(--body);margin:14px 0 0;line-height:1.8;">Relevant coursework: Deep Learning, Computer Vision, MLOps, Data Structures &amp; Algorithms, Operating Systems.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="band" style="border-bottom:none;">
+      <h2 class="sec reveal" style="margin-bottom:12px;">Contact</h2>
+      <p class="reveal" style="color:var(--body);font-size:15.5px;line-height:1.8;margin:0 0 30px;max-width:620px;">Open to AI/ML internship and research opportunities — happy to talk through any of the work above.</p>
+      <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <a class="card-link" href="mailto:bhavikfulfagar1008@gmail.com">
+          <div class="mono" style="font-size:13.5px;color:var(--primary);">Email</div>
+          <p style="margin:28px 0 0;font-weight:600;font-size:14px;word-break:break-word;">bhavikfulfagar1008@gmail.com</p>
+        </a>
+        <a class="card-link" href="https://linkedin.com/in/bhavik-fulfagar" target="_blank" rel="noreferrer">
+          <div class="mono" style="font-size:13.5px;color:var(--primary);">LinkedIn</div>
+          <p style="margin:28px 0 0;font-weight:600;font-size:14px;">in/bhavik-fulfagar</p>
+        </a>
+        <a class="card-link" href="https://github.com/Bhavik-03" target="_blank" rel="noreferrer">
+          <div class="mono" style="font-size:13.5px;color:var(--primary);">GitHub</div>
+          <p style="margin:28px 0 0;font-weight:600;font-size:14px;">github.com/Bhavik-03</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="mono" style="border-top:1px solid var(--border);padding:30px 44px;text-align:center;font-size:12.5px;color:var(--muted);">
+      © 2026 Bhavik Fulfagar · Pune, India
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  // --- project detail panels -------------------------------------------------
+  function openProject(id){
+    document.getElementById('project-list').style.display = 'none';            // hide the card grid
+    document.getElementById('panel-ai').style.display   = (id === 'ai')   ? 'block' : 'none';
+    document.getElementById('panel-deep').style.display = (id === 'deep') ? 'block' : 'none';
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function closeProject(){
+    document.getElementById('panel-ai').style.display = 'none';
+    document.getElementById('panel-deep').style.display = 'none';
+    document.getElementById('project-list').style.display = 'block';
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // --- scroll reveal ---------------------------------------------------------
+  (function(){
+    try{
+      if (typeof IntersectionObserver === 'undefined') return;                  // unsupported -> content stays visible
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      document.documentElement.classList.add('dc-anim-on');                     // only now does CSS hide .reveal
+      var io = new IntersectionObserver(function(entries, obs){
+        entries.forEach(function(e){
+          if (e.isIntersecting){ e.target.classList.add('is-visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
+      document.querySelectorAll('.reveal').forEach(function(n){ io.observe(n); });
+      setTimeout(function(){                                                    // failsafe: if nothing revealed, un-hide
+        if (document.querySelectorAll('.reveal.is-visible').length === 0){
+          document.documentElement.classList.remove('dc-anim-on');
+        }
+      }, 2500);
+    } catch(err){ document.documentElement.classList.remove('dc-anim-on'); }
+  })();
+</script>
+</body>
+</html>
